@@ -23,6 +23,10 @@
 ;;
 ;;   cd build && rm -rf ../build/* ; cmake -DCMAKE_BUILD_TYPE=Release .. && make -j 16 VERBOSE=1 && ctest . --verbose
 ;;
+;; To build the static version add
+;;
+;;   cmake -DCMAKE_BUILD_TYPE=Release -DBUILD_STATIC=1 ..
+;;
 ;; For the tests you may need /usr/bin/env. In a container create it with
 ;;
 ;;   mkdir -p /usr/bin ; ln -s $GUIX_ENVIRONMENT/bin/env /usr/bin/env
